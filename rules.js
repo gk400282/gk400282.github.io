@@ -38,6 +38,6 @@ ootoobeWebsiteLinkButton.addEventListener('click', function(){
 
 function scroller(){
 	page2.scrollIntoView({behavior: "smooth", block: "start", inline: "center"});
-	page1.removeEventListener("mousemove", scroller);
+	// page1.removeEventListener("click", scroller);
 }
-page1.addEventListener("mousemove", scroller);
+page1.addEventListener("click", scroller);
