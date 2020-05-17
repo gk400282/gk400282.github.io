@@ -16,26 +16,43 @@ var imagesearchGithubLinkButton = document.getElementById("imagesearch-github-li
 var imagesearchWebsiteLinkButton = document.getElementById("imagesearch-website-link");
 var ootoobeGithubLinkButton = document.getElementById("ootoobe-github-link");
 var ootoobeWebsiteLinkButton = document.getElementById("ootoobe-website-link");
+var saaGithubLinkButton = document.getElementById("saa-github-link");
+var gtcGithubLinkButton = document.getElementById("gtc-github-link");
+var gtcWebsiteLinkButton = document.getElementById("gtc-website-link");
 
 deduplicateGithubLinkButton.addEventListener('click', function(){
-	window.location.href = 'https://www.github.com/gk400282/deduplicate';
+	window.open('https://www.github.com/gk400282/deduplicate');
 });
 yelpcampGithubLinkButton.addEventListener('click', function(){
-	window.location.href = 'https://www.github.com/gk400282/yelpcamp';
+	window.open('https://www.github.com/gk400282/yelpcamp');
 });
 imagesearchGithubLinkButton.addEventListener('click', function(){
-	window.location.href = 'https://www.github.com/gk400282/imagesearch';
+	window.open('https://www.github.com/gk400282/imagesearch');
 });
 imagesearchWebsiteLinkButton.addEventListener('click', function(){
-	window.location.href = 'https://gk400282.github.io/imagesearch/';
+	window.open('https://gk400282.github.io/imagesearch/');
 });
 ootoobeGithubLinkButton.addEventListener('click', function(){
-	window.location.href = 'https://www.github.com/gk400282/ootoobe';
+	window.open('https://www.github.com/gk400282/ootoobe');
 });
 ootoobeWebsiteLinkButton.addEventListener('click', function(){
-	window.location.href = 'https://gk400282.github.io/ootoobe/';
+	window.open('https://gk400282.github.io/ootoobe/');
 });
-
+saaGithubLinkButton.addEventListener('click', function(){
+	window.open('https://www.github.com/gk400282/Sentiment-Analysis-App/');
+});
+gtcGithubLinkButton.addEventListener('click', function(){
+	window.open('https://www.github.com/gk400282/guessthecolor/');
+});
+gtcWebsiteLinkButton.addEventListener('click', function(){
+	window.open('https://gk400282.github.io/guessthecolor/');
+});
+window.onload = function(){
+	document.querySelectorAll('.image').forEach(function(image){
+		var n = Math.ceil(image.clientHeight / 10 + 1);
+		image.parentElement.style.gridRowEnd = `span ${n}`;
+	});
+}
 function scroller(){
 	page2.scrollIntoView({behavior: "smooth", block: "start", inline: "center"});
 	// page1.removeEventListener("click", scroller);
