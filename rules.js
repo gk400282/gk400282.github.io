@@ -11,7 +11,8 @@ var helloButton = document.getElementById("hello-button");
 var page1 = document.getElementById("page-1");
 var page2 = document.getElementById("page-2");
 var deduplicateGithubLinkButton = document.getElementById("deduplicate-github-link");
-var yelpcampGithubLinkButton = document.getElementById("yelpcamp-github-link");
+var campingoGithubLinkButton = document.getElementById("campingo-github-link");
+var campingoWebsiteLinkButton = document.getAnimations("campingo-website-link")
 var imagesearchGithubLinkButton = document.getElementById("imagesearch-github-link");
 var imagesearchWebsiteLinkButton = document.getElementById("imagesearch-website-link");
 var ootoobeGithubLinkButton = document.getElementById("ootoobe-github-link");
@@ -23,8 +24,11 @@ var gtcWebsiteLinkButton = document.getElementById("gtc-website-link");
 deduplicateGithubLinkButton.addEventListener('click', function(){
 	window.open('https://www.github.com/gk400282/deduplicate');
 });
-yelpcampGithubLinkButton.addEventListener('click', function(){
-	window.open('https://www.github.com/gk400282/yelpcamp');
+campingoGithubLinkButton.addEventListener('click', function(){
+	window.open('https://www.github.com/gk400282/campingo');
+});
+campingoWebsiteLinkButton.addEventListener('click', function(){
+	window.open('https://warm-fortress-21871.herokuapp.com/');
 });
 imagesearchGithubLinkButton.addEventListener('click', function(){
 	window.open('https://www.github.com/gk400282/imagesearch');
