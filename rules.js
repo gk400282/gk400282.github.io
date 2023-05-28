@@ -31,9 +31,9 @@ deduplicateGithubLinkButton.addEventListener('click', function(){
 campingoGithubLinkButton.addEventListener('click', function(){
 	window.open('https://www.github.com/gk400282/campingo');
 });
-// campingoWebsiteLinkButton.addEventListener('click', function(){
-// 	window.open('https://warm-fortress-21871.herokuapp.com/');
-// });
+campingoWebsiteLinkButton.addEventListener('click', function(){
+	window.open('https://campingo.onrender.com/');
+});
 imagesearchGithubLinkButton.addEventListener('click', function(){
 	window.open('https://www.github.com/gk400282/imagesearch');
 });
